@@ -1,0 +1,85 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+li{
+    float: right;
+}
+li a{
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: lightpink;
+}
+li a.active {
+    color: white;
+    background-color: lightblue;
+}
+#white{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 350%;
+    text-shadow: 3px 3px #666;
+}
+#black{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 350%;
+    text-shadow: 3px 3px #666;
+}
+html{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.slide{
+    position: relative;
+    padding: 25% 10%;
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+    transform-style: inherit;
+}
+.slide:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.7);
+}
+.slide, .slide:before{
+    background: 50% 50% / cover;
+}
+#intro{
+    background-image: url(Background_1.jpg);
+    z-index: 2;
+}
+#slide1:before{
+    background-image: url(Background_2.jpg);
+    transform: translateZ(-1px) scale(2);
+}
+#slide2{
+    background-image: url(Background_3.jpg);
+    z-index: 2;
+}
