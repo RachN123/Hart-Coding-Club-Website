@@ -23,3 +23,16 @@ li a.active {
     color: white;
     background-color: lightblue;
 }
+body{
+    height: 100%;
+    overflow: hidden;
+    background: #ffe259;
+    background: linear-gradient(to bottom, blue, white);
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}

@@ -38,3 +38,7 @@ h3{
     color: black;
     margin-top: 90px;
 }
+body{
+    background: linear-gradient(to bottom, blue, white);
+    background-repeat: no-repeat;
+}

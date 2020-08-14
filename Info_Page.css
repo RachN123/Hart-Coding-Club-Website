@@ -26,6 +26,8 @@ li a.active {
 }
 body{
     text-align: center;
+    background: linear-gradient(to bottom, blue, white);
+    background-repeat: no-repeat;
 }
 #one{
     padding-top: 100px;
